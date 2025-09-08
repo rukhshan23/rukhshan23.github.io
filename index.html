@@ -4,6 +4,16 @@
 <head>
     <title>Rukhshan Haroon</title>
     <style>
+        .copy-bibtex{
+            display:inline-block; margin-top:6px; padding:4px 8px; font-size:12px;
+            border:1px solid #2a9d8f; border-radius:6px; background:#fff; color:#2a9d8f; cursor:pointer;
+        }
+        .copy-bibtex:hover{ background:#e8f6f4; }
+        .copy-status{
+            margin-left:8px; font-size:12px; color:#2a9d8f; opacity:0; transition:opacity 180ms ease;
+        }
+        .copy-status.show{ opacity:1; }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -83,6 +93,12 @@
         .details {
             color: #264653; /* Dark blue color for the publication details */
         }
+        .award {
+        font-weight: bold;
+        color: #264653; /* Dark blue color for the publication details */
+        }
+        
+
     
     </style>
 </head>
@@ -102,7 +118,7 @@
         </h1>
 
         <p>
-            I am a third year Ph.D. student at Tufts University, USA. I am broadly interested in <b>accessibility</b>, <b>generative AI</b>, and <b>human-computer interaction</b> research. Recently, I have been redesigning instant messaging interfaces to incorporate assistive AI agents that facilitate smoother, more empathetic online interactions between autistic and non-autistic users. My research advocates for intervention at both ends—autistic and non-autistic—in an attempt to distribute the responsibility for improving communication more evenly. </p>
+            I am a fourth year Ph.D. student at Tufts University, USA. I am broadly interested in <b>accessibility</b>, <b>generative AI</b>, and <b>human-computer interaction</b> research. Recently, I have been redesigning instant messaging interfaces to incorporate assistive AI agents that facilitate smoother, more empathetic online interactions between autistic and non-autistic users. My research advocates for intervention at both ends—autistic and non-autistic—in an attempt to distribute the responsibility for improving communication more evenly. </p>
         <p align="justify">
             I am advised by <a href="https://engineering.tufts.edu/cs/people/faculty/fahad-dogar" target="_blank">Fahad R. Dogar</a>.
         </p>
@@ -120,15 +136,50 @@
             <li>
                 <p>
                     <span class="paper-title"><a href="assets-2025.pdf">NeuroBridge: Using Generative AI to Bridge Cross-neurotype Communication Differences with Neurotypical Perspective-taking</a></span><br>
+                    
                     <span class="authors"><strong>Rukhshan Haroon</strong>, Kyle Wigdor, Katie Yang, Nicole Toumanios, Eileen T Crehan, Fahad Dogar</span><br>
-                    <span class="details">Conditionally accepted at the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2025). Denver, Colorado, USA.</span>
-                </p>
+                    <span class="details">The 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2025). Denver, Colorado, USA.</span>
+                    <br>
+                    <span class="award"> 🎖️ Honourable Mention (best paper nomination)</span><br>
+                <button class="copy-bibtex" aria-label="Copy BibTeX">Copy BibTeX Citation</button>
+<span class="copy-status" aria-live="polite" aria-atomic="true"></span>
+<template class="bibtex">
+                    @inproceedings{haroon2025neurobridge,
+                        author    = {Haroon, Rukhshan and Wigdor, Kyle and Yang, Katie and Toumanios, Nicole and Crehan, Eileen T. and Dogar, Fahad},
+                        title     = {NeuroBridge: Using Generative AI to Bridge Cross-neurotype Communication Differences with Neurotypical Perspective-taking},
+                        booktitle = {Proceedings of the 27th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2025)},
+                        address   = {Denver, CO, USA},
+                        year      = {2025},
+                        url       = {https://rukhshan23.github.io/assets-2025.pdf}
+                      }                      
+                </template>
+            </p>
             </li>
             <li>
                 <p>
                     <span class="paper-title"><a href="twips.pdf">TwIPS: A Large Language Model Powered Texting Application to Simplify Conversational Nuances for Autistic Users</a></span><br>
                     <span class="authors"><strong>Rukhshan Haroon</strong>, Fahad Dogar</span><br>
                     <span class="details">The 26th International ACM SIGACCESS Conference on Computers and Accessibility (ASSETS 2024). St. John's, Newfoundland and Labrador, Canada.</span>
+                    <br>
+                    <button class="copy-bibtex" aria-label="Copy BibTeX">Copy BibTeX Citation</button>
+<span class="copy-status" aria-live="polite" aria-atomic="true"></span>
+<template class="bibtex">
+    @inproceedings{10.1145/3663548.3675633,
+        author = {Haroon, Rukhshan and Dogar, Fahad},
+        title = {TwIPS: A Large Language Model Powered Texting Application to Simplify Conversational Nuances for Autistic Users},
+        year = {2024},
+        isbn = {9798400706776},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        url = {https://doi.org/10.1145/3663548.3675633},
+        doi = {10.1145/3663548.3675633},
+        booktitle = {Proceedings of the 26th International ACM SIGACCESS Conference on Computers and Accessibility},
+        articleno = {24},
+        numpages = {18},
+        location = {St. John's, NL, Canada},
+        series = {ASSETS '24}
+        }
+</template>
                 </p>
             </li>
             <li>
@@ -136,6 +187,28 @@
                     <span class="paper-title"><a href = "3616862.pdf">On the Frontline During the Covid-19 Pandemic: Gender Inequality and Experiences of Healthcare Workers in Pakistan</a></span><br>
                     <span class="authors"><strong>Rukhshan Haroon</strong>*, Ayesha Naeem*, Priya Sajjad*, Zartash Uzmi</span><br>
                     <span class="details">Presented at ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS) 2023 in Cape Town, South Africa.<br>Published in ACM Journal on Computing and Sustainable Societies (JCSS), vol. 2, issue 1, March 2024.</span>
+                    <br>
+                    <button class="copy-bibtex" aria-label="Copy BibTeX">Copy BibTeX Citation</button>
+<span class="copy-status" aria-live="polite" aria-atomic="true"></span>
+<template class="bibtex">
+    @article{10.1145/3616862,
+        author = {Haroon, Rukhshan and Naeem, Ayesha and Sajjad, Priya Fatima and Uzmi, Zartash Afzal},
+        title = {On the Frontline During the COVID-19 Pandemic: Gender Inequality and Experiences of Healthcare Workers in Pakistan},
+        year = {2024},
+        issue_date = {March 2024},
+        publisher = {Association for Computing Machinery},
+        address = {New York, NY, USA},
+        volume = {2},
+        number = {1},
+        url = {https://doi.org/10.1145/3616862},
+        doi = {10.1145/3616862},
+        journal = {ACM J. Comput. Sustain. Soc.},
+        month = jan,
+        articleno = {8},
+        numpages = {30},
+        keywords = {Gender, healthcare workers, Covid-19}
+        }
+</template>
                 </p>
             </li>
             <li>
@@ -143,6 +216,20 @@
                     <span class="paper-title"><a href = "https://arxiv.org/pdf/2410.11857">LLMProxy: Reducing Cost to Access Large Language Models</a></span><br>
                     <span class="authors">Noah Martin, Abdullah Bin Faisal, Hiba Eltigani, <strong>Rukhshan Haroon</strong>, Chami Lamelas, Fahad Dogar</span><br>
                     <span class="details">Under submission in 2024.</span>
+                    <br>
+                    <button class="copy-bibtex" aria-label="Copy BibTeX">Copy BibTeX Citation</button>
+<span class="copy-status" aria-live="polite" aria-atomic="true"></span>
+<template class="bibtex">
+    @misc{martin2024llmproxyreducingcostaccess,
+        title={LLMProxy: Reducing Cost to Access Large Language Models}, 
+        author={Noah Martin and Abdullah Bin Faisal and Hiba Eltigani and Rukhshan Haroon and Swaminathan Lamelas and Fahad Dogar},
+        year={2024},
+        eprint={2410.11857},
+        archivePrefix={arXiv},
+        primaryClass={cs.DC},
+        url={https://arxiv.org/abs/2410.11857}, 
+  }
+</template>
                 </p>
             </li>
             <li>
@@ -150,14 +237,51 @@
                 <p>
                     <span class="paper-title"><a href="https://www.csl.sri.com/users/gehani/papers/ESORICS-2023.Debloat.pdf">SoK: A Tale of Reduction, Security and Correctness - Evaluating Program Debloating Paradigms and Their Compositions</a></span><br>
                     <span class="authors">Ali, M., Muzammil, M., Karim, F., Naeem, A., <strong>Haroon, R.</strong>, Haris, M., Nadeem, H., Sabir, W., Shaon, F., Zaffar, F., Yegneswaran, V., Gehani, A. & Rahaman, S.</span><br>
-                    <span class="details">28th European Symposium on Research in Computer Security (ESORICS 2023). The Hague, The Netherlands.</span><br>
+                    <span class="details">28th European Symposium on Research in Computer Security (ESORICS 2023). The Hague, The Netherlands.</span>
+                    <br>
+                    <button class="copy-bibtex" aria-label="Copy BibTeX">Copy BibTeX Citation</button>
+<span class="copy-status" aria-live="polite" aria-atomic="true"></span>
+<template class="bibtex">
+    @inproceedings{10.1007/978-3-031-51482-1_12,
+        author = {Ali, Muaz and Muzammil, Muhammad and Karim, Faraz and Naeem, Ayesha and Haroon, Rukhshan and Haris, Muhammad and Nadeem, Huzaifah and Sabir, Waseem and Shaon, Fahad and Zaffar, Fareed and Yegneswaran, Vinod and Gehani, Ashish and Rahaman, Sazzadur},
+        title = {SoK: A Tale of&nbsp;Reduction, Security, and&nbsp;Correctness - Evaluating Program Debloating Paradigms and&nbsp;Their Compositions},
+        year = {2023},
+        isbn = {978-3-031-51481-4},
+        publisher = {Springer-Verlag},
+        address = {Berlin, Heidelberg},
+        url = {https://doi.org/10.1007/978-3-031-51482-1_12},
+        doi = {10.1007/978-3-031-51482-1_12},
+        booktitle = {Computer Security – ESORICS 2023: 28th European Symposium on Research in Computer Security, The Hague, The Netherlands, September 25–29, 2023, Proceedings, Part IV},
+        pages = {229–249},
+        numpages = {21},
+        keywords = {Program Debloating, Debloating Comparison, Benchmark},
+        location = {The Hague, The Netherlands}
+        } 
+</template>
+
+                    
                 </p>
             </li>
             <li>
                 <p>
                     <span class="paper-title"><a href="unpacking-paper.pdf">Unpacking Misinformation Amid the COVID-19 Pandemic: A Mixed Methods Study</a></span><br>
                     <span class="authors">Priya Sajjad, <strong>Rukhshan Haroon</strong>, Ayesha Naeem, Uswah Fatima, Zartash Uzmi</span><br>
-                    <span class="details">IEEE Internet Computing, vol. 26, no. 2, pp. 7-18, 1 March-April 2022.</span><br>
+                    <span class="details">IEEE Internet Computing, vol. 26, no. 2, pp. 7-18, 1 March-April 2022.</span>
+                    <br>
+                    <button class="copy-bibtex" aria-label="Copy BibTeX">Copy BibTeX Citation</button>
+<span class="copy-status" aria-live="polite" aria-atomic="true"></span>
+<template class="bibtex">
+    @ARTICLE{sajjad-covid,
+        author={Sajjad, Priya Fatima and Haroon, Rukhshan and Naeem, Ayesha and Uswah-E-Fatima and Uzmi, Zartash Afzal},
+        journal={IEEE Internet Computing}, 
+        title={Unpacking Misinformation Amid the COVID-19 Pandemic: A Mixed Methods Study}, 
+        year={2022},
+        volume={26},
+        number={2},
+        pages={7-18},
+        keywords={COVID-19;Fake news;Social networking (online);Vaccines;Pandemics;Government;Interviews},
+        doi={10.1109/MIC.2022.3154318}}      
+</template>
                 </p>
 
             </li>
@@ -171,10 +295,53 @@
         <p>Office: Room # 440K, 177 College Ave, Medford, MA 02155. </p>
     </div>
     <div id="footer">
-        <p>Last updated: July, 2023.</p>
+        <p>Last updated: September, 2025.</p>
     </div>
 
-
+    <script>
+        document.addEventListener('click', async (e) => {
+          const btn = e.target.closest('.copy-bibtex');
+          if (!btn) return;
+        
+          // Find the matching template and status span within the same paper <p>
+          const container = btn.closest('p') || btn.parentElement;
+          const tpl = container.querySelector('template.bibtex');
+          const status = btn.nextElementSibling && btn.nextElementSibling.classList.contains('copy-status')
+            ? btn.nextElementSibling
+            : container.querySelector('.copy-status');
+        
+          if (!tpl) return;
+          const text = (tpl.content && tpl.content.textContent ? tpl.content.textContent : tpl.textContent).trim();
+          if (!text) return;
+        
+          // Try native clipboard; fallback to execCommand
+          try {
+            await navigator.clipboard.writeText(text);
+          } catch {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.setAttribute('readonly','');
+            ta.style.position = 'absolute';
+            ta.style.left = '-9999px';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+          }
+        
+          // Inline feedback next to the button
+          if (status) {
+            const original = status.textContent;
+            status.textContent = 'Citation copied!';
+            status.classList.add('show');
+            setTimeout(() => {
+              status.classList.remove('show');
+              status.textContent = original || '';
+            }, 1200);
+          }
+        });
+        </script>
+        
 </body>
 
 </html>
