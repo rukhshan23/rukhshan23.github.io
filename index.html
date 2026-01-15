@@ -4,6 +4,57 @@
 <head>
     <title>Rukhshan Haroon</title>
     <style>
+        /* Add a subtle border and spacing around the News section */
+    /* News list: keep it clean */
+        ul.news{
+        padding-left: 40px;   /* controls indent */
+        margin-left: 0;
+        }
+
+        ul.news li { margin-bottom: 10px; line-height: 1.45; }
+
+        /* Inline date pill */
+        .news-date{
+        display:inline-block;
+        font-weight:700;
+        font-size:12px;
+        color:#264653;
+        background:#eef6f6;
+        border:1px solid #cfe7e4;
+        padding:2px 8px;
+        border-radius:999px;
+        margin-right:8px;
+        }
+
+        /* Inline tag badge */
+        .news-tag{
+        display:inline-block;
+        font-weight:700;
+        font-size:11px;
+        padding:2px 8px;
+        border-radius:999px;
+        margin-right:8px;
+        border:1px solid transparent;
+        }
+
+        /* Tag variants */
+        .tag-award{ color:#8a4f00; background:#fff3e6; border-color:#ffd6ad; }
+        .tag-talk{ color:#0f5c8f; background:#eaf4ff; border-color:#b9dcff; }
+        .tag-dc{ color:#5b3d9a; background:#f2edff; border-color:#d9c8ff; }
+        .tag-workshop{ color:#1d6b5b; background:#e8f6f4; border-color:#bfeae4; }
+        .tag-panel{ color:#7a2e2e; background:#ffecec; border-color:#ffc6c6; }
+        .tag-attend{ color:#3a4a58; background:#f2f4f7; border-color:#d7dde5; }
+        .tag-milestone{ color:#2a6f3b; background:#ecf9ef; border-color:#c7efd2; }
+
+        /* Inline highlight for key achievements */
+        .news-highlight{
+        font-weight:800;
+        color:#e76f51;
+        text-decoration-color: rgba(231, 111, 81, 0.35);
+        text-underline-offset: 3px;
+        }
+
+
         .copy-bibtex{
             display:inline-block; margin-top:6px; padding:4px 8px; font-size:12px;
             border:1px solid #2a9d8f; border-radius:6px; background:#fff; color:#2a9d8f; cursor:pointer;
@@ -31,11 +82,7 @@
             margin: 0 auto;
         }
 
-        img {
-            float: right;
-            padding-left: 20px;
-            padding-bottom: 10px;
-        }
+
 
         p {
             margin-bottom: 20px;
@@ -101,8 +148,78 @@
         font-weight: bold;
         color: #264653; /* Dark blue color for the publication details */
         }
-        
+        .social-icons{
+        display:flex;
+        gap:10px;
+        align-items:center;
+        margin-top:8px;
+        }
 
+        .hero{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:0;
+}
+
+.name{
+  display:inline-flex;
+  align-items:baseline;
+  gap:10px;
+  white-space:nowrap;
+}
+
+.pronouns{
+  font-weight:normal;
+  font-size:0.6em;
+  color:#666;
+}
+.social-icons{
+  display:inline-flex;
+  align-items:flex-start;
+  gap:10px;          /* visual spacing only */
+
+  margin-left: 15px;         /* + = move right, - = move left */
+  position: relative;
+  top: 7px;  
+}
+
+.social-icons a.icon{
+  display:inline-flex;
+  padding:0;
+  margin:0;
+  line-height:0;     /* removes extra clickable vertical area */
+  background:transparent;
+  text-decoration:none;
+}
+
+.social-icons a.icon img{
+  display:block;
+  height:34px;       /* increase size here */
+  width:auto;
+}
+
+/* remove hover/focus visuals */
+.social-icons a.icon:hover,
+.social-icons a.icon:active{
+  background:transparent;
+  box-shadow:none;
+}
+
+.social-icons a.icon:focus,
+.social-icons a.icon:focus-visible{
+  outline:none;
+  box-shadow:none;
+}
+
+
+.headshot {
+  float: right;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  object-fit: cover;
+}
     
     </style>
 </head>
@@ -110,30 +227,81 @@
 <body>
     <div id="content">
         <h1>Rukhshan Haroon <span style="font-weight: normal;">(he/him)</span>
+
+            <span class="social-icons">
+                <a class="icon" href="https://scholar.google.com/citations?hl=en&user=gx-K1jYAAAAJ" target="_blank" rel="noopener">
+                  <img src="google-scholar-icon.png" alt="Google Scholar">
+                </a>
+                <a class="icon" href="https://github.com/rukhshan23" target="_blank" rel="noopener">
+                  <img src="github-icon.png" alt="GitHub">
+                </a>
+                <a class="icon" href="https://www.linkedin.com/in/rukhshan-haroon-3b85b7222/" target="_blank" rel="noopener">
+                    <img src="linkedin-icon.png" alt="LinkedIn">
+                  </a>
+              </span>
             <img alt="Your Name" align="right" border="0" style="padding-left: 20px; padding-bottom: 10px"
                 src="rh.png" height="180" >
 
-                <span class="icon-container">
-                <a href="https://scholar.google.com/citations?hl=en&user=gx-K1jYAAAAJ" target="_blank"><img src="google-scholar-icon.png" alt="rukhshan-haroon-google-scholar" height="45"></a>
-            </span>
-            <span class="icon-container">
-                <a href="https://www.linkedin.com/in/rukhshan-haroon-3b85b7222/" target="_blank"><img src="linkedin-icon.png" alt="rukhshan-haroon-linkedin" height="45"></a>
-            </span>
         </h1>
 
+        
+
         <p>
-            I am a fourth year Ph.D. student at Tufts University, USA. I am broadly interested in <b>accessibility</b>, <b>generative AI</b>, and <b>human-computer interaction</b> research. Recently, I have been redesigning instant messaging interfaces to incorporate assistive AI agents that facilitate smoother, more empathetic online interactions between autistic and non-autistic users. My research advocates for intervention at both ends—autistic and non-autistic—in an attempt to distribute the responsibility for improving communication more evenly. </p>
+            <p class="lead">
+                Hey! I’m Rukhshan, a fourth-year Ph.D. candidate in Computer Science at Tufts University.
+            <p>
+                As an accessibility and human-computer interaction researcher, I study, build and evaluate AI-mediated communication systems designed to bridge communication differences between autistic and non-autistic individuals, with a current focus on auditing how large language models (LLMs) exhibit normative biases when mediating between them. A core theme of my research is shared responsibility: designing interventions that support both autistic and non-autistic users, rather than placing the burden on one side.
+              </p>
+              
         <p align="justify">
-            I am advised by <a href="https://engineering.tufts.edu/cs/people/faculty/fahad-dogar" target="_blank">Fahad R. Dogar</a>.
+            I am advised by <a href="https://www.eecs.tufts.edu/~fahad/" target="_blank">Fahad R. Dogar</a>.
         </p>
 
         <p align="justify">
             Prior to Tufts, I completed my undergraduate degree in Computer Science from Lahore University of Management Sciences (LUMS), Pakistan. I was advised by <a href="https://lums.edu.pk/lums_employee/713" target="_blank">Zartash Afzal Uzmi</a> and <a href= "https://lums.edu.pk/lums_employee/422" target="_blank"> Fareed Zaffar</a>. 
         </p> 
+        
+        <p class="interests">
+            <strong>Research interests:</strong>
+            Human–AI interaction · Accessibility · Benchmarking bias and fairness in AI ·
+            AI-mediated communication · Simulation · Participatory design
+          </p> 
 
 <!--         <p align="justify">
             Here is my <a href="cv_rukhshan.pdf">CV</a>.
         </p>  -->
+
+        <h2>News</h2>
+            <ul class="news">
+            <li><span class="news-date">Oct 2025</span> <span class="news-tag tag-award">Award</span>
+                <em>NeuroBridge</em> received the <span class="news-highlight">Best Student Paper Award 🏆</span> at ASSETS 2025.</li>
+
+            <li><span class="news-date">Oct 2025</span> <span class="news-tag tag-attend">Conference</span><span class="news-tag tag-talk">Talk</span>
+                Presented <em>NeuroBridge</em> at ASSETS 2025 (Denver, CO, USA).</li>
+
+            <li><span class="news-date">Oct 2025</span> <span class="news-tag tag-dc">Doctoral Consortium</span>
+                Participated in the <em>ASSETS 2025 Doctoral Consortium</em>.</li>
+
+            <li><span class="news-date">Apr 2025</span> <span class="news-tag tag-workshop">Workshop</span>
+                Participated in the <em>Generative AI and Accessibility</em> workshop at CHI 2025.</li>
+
+            <li><span class="news-date">Mar 2025</span> <span class="news-tag tag-panel">Panel</span><span class="news-tag tag-talk">Talk</span>
+                Gave a research talk at a CRA UR2PhD Workshop (<em>Research &amp; Social Good</em>).</li>
+
+            <li><span class="news-date">Dec 2024</span> <span class="news-tag tag-milestone">Milestone</span>
+                Passed my Ph.D. candidacy exam.</li>
+
+            <li><span class="news-date">Oct 2024</span> <span class="news-tag tag-attend">Conference</span><span class="news-tag tag-talk">Talk</span>
+                Presented <em>TwIPS</em> at ASSETS 2024 (St. John’s, NL, Canada).</li>
+
+            <li><span class="news-date">Oct 2023</span> <span class="news-tag tag-attend">Conference</span>
+                Attended ASSETS 2023 (New York City, USA).</li>
+
+            <li><span class="news-date">Sep 2022</span> <span class="news-tag tag-milestone">Milestone</span>
+                Started my Ph.D. in Computer Science at Tufts University.</li>
+            </ul>
+        
+
 
         <h2>Research Papers</h2>
         <ul>
@@ -296,7 +464,27 @@
         </ul>
 
 
-        
+        <h2>Teaching</h2>
+<ul class="teaching">
+  <li>
+    <strong>Teaching Assistant</strong>, Tufts University — <em>Human-Computer Interaction</em>
+    (Spring 2026)<br/>
+    Instructor: <a href="https://www.cs.tufts.edu/~jacob/" target="_blank" rel="noopener">Rob Jacob</a>
+  </li>
+
+  <li>
+    <strong>Teaching Assistant</strong>, Tufts University — <em>Generative AI for Social Impact</em>
+    (Spring 2025)<br/>
+    Instructor: <a href="https://www.eecs.tufts.edu/~fahad/" target="_blank" rel="noopener">Fahad Dogar</a>
+  </li>
+
+  <li>
+    <strong>Teaching Assistant</strong>, Tufts University — <em>Computer Networks</em>
+    (Fall 2025)<br/>
+    Instructor: <a href="https://www.eecs.tufts.edu/~fahad/" target="_blank" rel="noopener">Fahad Dogar</a>
+  </li>
+</ul>
+
 
         <h2>Contact</h2>
         <p>Email: rukhshan.haroon@tufts.edu</p>
