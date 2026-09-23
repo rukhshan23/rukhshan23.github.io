@@ -28,6 +28,7 @@ cat >"${posts_dir}/2022-01-01-giscus-comments.md" <<'POST'
 layout: post
 title: Giscus comments integration fixture
 date: 2022-01-01
+giscus_comments: true
 ---
 Giscus integration fixture.
 POST
@@ -37,6 +38,7 @@ cat >"${posts_dir}/2015-01-01-disqus-comments.md" <<'POST'
 layout: post
 title: Disqus comments integration fixture
 date: 2015-01-01
+disqus_comments: true
 ---
 Disqus integration fixture.
 POST

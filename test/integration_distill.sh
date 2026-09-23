@@ -4,11 +4,39 @@ set -euo pipefail
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/distill-override.yml"
 tmp_site="${tmp_dir}/site"
+posts_dir="_posts"
+fixture_post="${posts_dir}/2021-01-01-distill.md"
+created_posts=0
 
 cleanup() {
+  if [[ "${created_posts}" == "1" ]]; then
+    rm -f "${fixture_post}"
+    rmdir "${posts_dir}" 2>/dev/null || true
+  fi
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+if [[ -e "${fixture_post}" ]]; then
+  echo "Distill integration fixture path already exists: ${fixture_post}" >&2
+  exit 1
+fi
+mkdir -p "${posts_dir}"
+created_posts=1
+
+cat >"${fixture_post}" <<'POST'
+---
+layout: distill
+title: Distill integration fixture
+description: Temporary post used by the Distill integration test.
+date: 2021-01-01
+giscus_comments: true
+mermaid:
+  enabled: true
+tikzjax: true
+---
+Temporary Distill integration fixture.
+POST
 
 cat >"${tmp_override}" <<'YAML'
 giscus:
