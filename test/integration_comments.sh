@@ -4,11 +4,42 @@ set -euo pipefail
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/comments-test-override.yml"
 tmp_site="${tmp_dir}/site"
+posts_dir="_posts"
+created_posts=0
 
 cleanup() {
+  if [[ "${created_posts}" == "1" ]]; then
+    rm -f "${posts_dir}/2022-01-01-giscus-comments.md" "${posts_dir}/2015-01-01-disqus-comments.md"
+    rmdir "${posts_dir}" 2>/dev/null || true
+  fi
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+mkdir -p "${posts_dir}"
+if [[ -e "${posts_dir}/2022-01-01-giscus-comments.md" || -e "${posts_dir}/2015-01-01-disqus-comments.md" ]]; then
+  echo "comments integration fixture path already exists" >&2
+  exit 1
+fi
+created_posts=1
+
+cat >"${posts_dir}/2022-01-01-giscus-comments.md" <<'POST'
+---
+layout: post
+title: Giscus comments integration fixture
+date: 2022-01-01
+---
+Giscus integration fixture.
+POST
+
+cat >"${posts_dir}/2015-01-01-disqus-comments.md" <<'POST'
+---
+layout: post
+title: Disqus comments integration fixture
+date: 2015-01-01
+---
+Disqus integration fixture.
+POST
 
 cat >"${tmp_override}" <<'YAML'
 giscus:
