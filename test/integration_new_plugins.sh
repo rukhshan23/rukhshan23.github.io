@@ -8,10 +8,46 @@
 set -euo pipefail
 
 tmp_dir="$(mktemp -d)"
+posts_dir="_posts"
+rtl_fixture="${posts_dir}/2022-01-01-rtl.md"
+marimo_fixture="${posts_dir}/2025-01-01-marimo.md"
+created_posts=0
+
 cleanup() {
+  if [[ "${created_posts}" == "1" ]]; then
+    rm -f "${rtl_fixture}" "${marimo_fixture}"
+    rmdir "${posts_dir}" 2>/dev/null || true
+  fi
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+if [[ -e "${rtl_fixture}" || -e "${marimo_fixture}" ]]; then
+  echo "new-plugin integration fixture path already exists" >&2
+  exit 1
+fi
+mkdir -p "${posts_dir}"
+created_posts=1
+
+cat >"${rtl_fixture}" <<'POST'
+---
+layout: post
+title: RTL integration fixture
+date: 2022-01-01
+lang: fa
+---
+Temporary RTL integration fixture.
+POST
+
+cat >"${marimo_fixture}" <<'POST'
+---
+layout: post
+title: Marimo integration fixture
+date: 2025-01-01
+marimo: true
+---
+Temporary Marimo integration fixture.
+POST
 
 build() {
   local name="$1"
