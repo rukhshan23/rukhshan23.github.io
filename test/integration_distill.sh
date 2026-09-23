@@ -31,6 +31,9 @@ title: Distill integration fixture
 description: Temporary post used by the Distill integration test.
 date: 2021-01-01
 giscus_comments: true
+mermaid:
+  enabled: true
+tikzjax: true
 ---
 Temporary Distill integration fixture.
 POST
