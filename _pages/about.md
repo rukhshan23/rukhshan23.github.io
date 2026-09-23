@@ -203,8 +203,15 @@ My research seeks to understand and improve how AI-mediated communication (AIMC)
     grid-template-columns: 110px minmax(0, 1fr);
     gap: 1rem;
   }
+  .research-diagram {
+    width: 100%;
+    max-width: 110px;
+  }
   .research-diagram-misinformation {
     width: 90px;
+  }
+  .research-copy {
+    min-width: 0;
   }
 }
 </style>
