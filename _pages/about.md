@@ -74,7 +74,7 @@ html[data-theme="dark"] #back-to-top {
 
 Hi! I’m Rukhshan, a fifth-year Ph.D. candidate in Computer Science at <a class="bio-link" href="https://www.tufts.edu/">Tufts University</a> specializing in human-computer interaction (HCI) and accessibility. I am advised by <a class="bio-link" href="https://www.eecs.tufts.edu/~fahad/">Fahad Dogar</a> and <a class="bio-link" href="https://jayl.in/">Jaylin Herskovitz</a>.
 
-My research seeks to understand and improve how AI-mediated communication (AIMC) systems shape human-human interaction in complex social settings. Specifically, my doctoral work spans: (1) the design and user-centered evaluation of AIMC systems to facilitate cross-neurotype interaction, and (2) the development of benchmarks to systematically evaluate the AI models powering these systems. I employ qualitative and quantitative methods, including semi-structured interviews, think-aloud studies, and controlled experiments to design and evaluate the systems I build.
+My doctoral research seeks to understand and improve how AI-mediated communication (AIMC) systems shape human-human interaction in complex social settings. Specifically, it spans: (1) the user-centered design and evaluation of AIMC systems to facilitate cross-neurotype interaction, and (2) developing benchmarks to systematically evaluate the AI models powering these systems.
 
 > **Research Interests:** AI-Mediated Communication · AI Evaluation · Accessibility · Responsible AI · Human–AI Interaction · Mixed-Methods
 
