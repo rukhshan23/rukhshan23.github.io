@@ -17,6 +17,17 @@ latest_posts:
 ---
 
 <style>
+#back-to-top {
+  bottom: 70px !important;
+}
+html[data-theme="light"] #back-to-top {
+  color: #fff !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+html[data-theme="dark"] #back-to-top {
+  color: #111 !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+}
 @media (min-width: 768px) {
   .post .profile {
     margin-left: 3.5rem;
