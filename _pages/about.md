@@ -28,12 +28,28 @@ html[data-theme="dark"] #back-to-top {
   color: #111 !important;
   background: rgba(255, 255, 255, 0.5) !important;
 }
+.post .profile {
+  max-width: 160px;
+}
 @media (min-width: 768px) {
-  .post .profile {
-    margin-left: 3.5rem;
+  .post {
+    position: relative;
   }
-  .post .profile img {
-    transform: translateY(-55px);
+  .post .profile {
+    position: absolute;
+    top: 24px;
+    left: 350px;
+    float: none;
+    width: 112px;
+    max-width: 112px;
+    margin: 0;
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 767px) {
+  .post .profile {
+    width: 110px;
+    margin: 0 auto 1rem;
   }
 }
 .post .clearfix > p:nth-of-type(n + 2) {
