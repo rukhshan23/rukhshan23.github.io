@@ -78,7 +78,7 @@ My research spans human–AI interaction, accessibility, and AI safety, with a f
 
 Specifically, my dissertation research seeks to understand and improve the role of AI-mediated communication (AIMC) in facilitating cross-neurotype (e.g., autistic-allistic) interaction. This work brings a central concern in AIMC research into focus: when AIMC support is available, whose communication needs does it serve, and how does it accommodate and evaluate different forms of human expression? To investigate this question, I work closely with autistic individuals to understand the challenges that arise in cross-neurotype communication and build neurodiversity-affirming AIMC support tools. I also develop datasets and benchmarking infrastructure to systematically evaluate large language models (LLMs) for bias against autistic communication styles.
 
-> **Research Interests:** AI-Mediated Communication · Accessibility · AI Evaluation · Responsible AI · Human–AI Interaction
+> **Research Interests:** AI-Mediated Communication · Accessibility/Assistive Tech · AI Evaluation · Responsible AI · Human–AI Interaction
 
 <section id="news" class="homepage-section" markdown="1">
 
