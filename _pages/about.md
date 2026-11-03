@@ -70,7 +70,7 @@ html[data-theme="dark"] #back-to-top {
 }
 </style>
 
-[CV](rukhshan-cv.pdf) · [Google Scholar](https://scholar.google.com/citations?hl=en&user=gx-K1jYAAAAJ) · [GitHub](https://github.com/rukhshan23) · [LinkedIn](https://www.linkedin.com/in/rukhshan-haroon-3b85b7222/)
+[Google Scholar](https://scholar.google.com/citations?hl=en&user=gx-K1jYAAAAJ) · [GitHub](https://github.com/rukhshan23) · [LinkedIn](https://www.linkedin.com/in/rukhshan-haroon-3b85b7222/)
 
 Hi! I am a fifth-year Ph.D. candidate in Computer Science at <a class="bio-link" href="https://www.tufts.edu/">Tufts University</a>, where I work with <a class="bio-link" href="https://www.eecs.tufts.edu/~fahad/">Fahad Dogar</a> (advisor) and <a class="bio-link" href="https://jayl.in/">Jaylin Herskovitz</a>. My research spans human–AI interaction, accessibility, and AI safety, with a focus on building and benchmarking AI systems designed to support the needs of people with disabilities.
 
