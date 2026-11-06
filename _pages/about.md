@@ -76,7 +76,7 @@ Hi! I am a fifth-year Ph.D. candidate in Computer Science at <a class="bio-link"
 
 Specifically, my dissertation research seeks to understand and improve the role of AI-mediated communication (AIMC) in facilitating cross-neurotype (e.g., autistic-allistic) interaction. This work brings a central concern in AIMC research into focus: <strong>when AIMC support is available, whose communication needs does it serve, and how does it accommodate and evaluate different forms of human expression?</strong> To investigate this question, I work closely with autistic individuals to understand the challenges that arise in cross-neurotype communication and build neurodiversity-affirming AIMC support tools. I also develop datasets and benchmarking infrastructure to systematically evaluate large language models (LLMs) for bias against autistic communication styles.
 
-My prior work also includes efforts to improve AI access in developing regions and among users with little or no programming experience. Across these areas, I bring technical expertise in AI system development and evaluation, along with experience in participatory design, controlled experiments, mixed-methods research, and field deployments.
+My prior work includes efforts to improve AI access in developing regions and among users with little or no programming experience. Across these areas, I bring technical expertise in AI system development and evaluation, along with experience in participatory design, controlled experiments, mixed-methods research, and field deployments.
 
 > **Research Interests:** AI-Mediated Communication · Accessibility/Assistive Tech · AI Evaluation · Responsible AI · Human–AI Interaction
 
